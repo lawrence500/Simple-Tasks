@@ -17,6 +17,9 @@ const Header = (props) => {
 
   function createNewTasks() {
     let taskKey = prompt("Enter new tasks list name");
+
+    if(taskKey === '') return taskKey
+    
     setTaskKeys([...taskKeys, taskKey])
 
     console.log(taskKey)
