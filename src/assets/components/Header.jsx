@@ -58,7 +58,7 @@ const Header = (props) => {
                 </NavDropdown>
               </Nav>
             </Navbar.Collapse>
-            <Nav.Link onClick={() => createNewTasks()}>Create</Nav.Link>
+            <Nav.Link onClick={() => createNewTasks()}>New</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
