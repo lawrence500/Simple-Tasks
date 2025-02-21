@@ -1,0 +1,71 @@
+h2{
+  color: snow;
+  margin-bottom: 20px;
+  margin-left: -2px;
+  
+}
+.tasks{
+    display: flex;
+    flex-direction: column;
+  
+    padding: 20px;
+  
+    height: 500px;
+    width: 800px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .tasks{
+    height: 500px;
+    width: 500px;
+}
+
+}
+
+
+.list-group {
+  overflow: auto;
+  margin-top: 10px;
+}
+
+.list-group::-webkit-scrollbar {
+  display: none;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-group-item div {
+  display: flex;
+  gap: 5px;
+}
+
+.list-group-item div button {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.input-group-text {
+  cursor: pointer;
+}
+
+.task-text {
+  flex: 1;
+  height: 100%;
+
+  margin-right: 10px;
+
+  padding-left: 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.task-text.complete {
+  outline: 1px solid green;
+
+  padding: 6px 12px;
+}
