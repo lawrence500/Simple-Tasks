@@ -50,7 +50,6 @@ const Header = (props) => {
         <Container>
           <Navbar.Brand href="/">Simple || Tasks</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link onClick={() => createNewTasks()}>Create</Nav.Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
@@ -59,6 +58,7 @@ const Header = (props) => {
                 </NavDropdown>
               </Nav>
             </Navbar.Collapse>
+            <Nav.Link onClick={() => createNewTasks()}>Create</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
